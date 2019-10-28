@@ -1,2 +1,2 @@
-# gdw_Iyawe_Kilp_Albrecht-
+# gdw_Iyawe_Albrecht_Kilp
 Repository zum Projekt für Grundlage des Web 
