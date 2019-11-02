@@ -34,18 +34,23 @@ function newBewertung(){
 }
 
 //gdw_aufagabe 2 
-function bewertungArray(){
-    let newArray = ['Bewertung 1',anzBewertungen , bewertung];
-            console.log(newArray.length); 
+let newArray = [name = `Bewertung ${anzBewertungen}`,anzBewertungen , bewertung];
+
+ function bewertungArray(){
+     newArray;
+        console.log(newArray.length); 
+        console.log(newArray[0]);
 }
 
 function ratingObject(){
     let rating = new Object(); 
-        rating.name = 'name';
+        rating.name = `Bewertung ${anzBewertungen}`;
         rating.rating = rating; 
         rating.number = anzBewertungen; 
 }
 
 
+
+
     newBewertung();
-    bewertungArray();
+    console.log(ratingObject.name);
