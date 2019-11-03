@@ -1,0 +1,67 @@
+[
+  {
+    "stadt": "Wuppertal",
+    "einwohnerzahl": 350000,
+    "bundesland": "nrw"
+  },
+
+  {
+    "stadt": "Berlin",
+    "einwohnerzahl": 3748148,
+    "bundesland": "berlin"
+  },
+
+  {
+    "stadt": "Hamburg",
+    "einwohnerzahl": 1891810,
+    "bundesland": "hamburg"
+  },
+
+  {
+    "stadt": "München",
+    "einwohnerzahl": 1471508,
+    "bundesland": "münchen"
+  },
+
+  {
+    "stadt": "Köln",
+    "einwohnerzahl": 1085664,
+    "bundesland": "nrw"
+  },
+
+  {
+    "stadt": "Frankfurt",
+    "einwohnerzahl": 753.056,
+    "bundesland": "hessen"
+  },
+
+  {
+    "stadt": "Stuttgart",
+    "einwohnerzahl": 634830,
+    "bundesland": "bw"
+  },
+
+  {
+    "stadt": "Düsseldorf",
+    "einwohnerzahl": 619294,
+    "bundesland": "nrw"
+  },
+
+  {
+    "stadt": "Leipzig",
+    "einwohnerzahl": 587857,
+    "bundesland": "sachsen"
+  },
+
+  {
+    "stadt": "Dortmund",
+    "einwohnerzahl": 587010,
+    "bundesland": "nrw"
+  },
+
+  {
+    "stadt": "Essen",
+    "einwohnerzahl": 583109,
+    "bundesland": "nrw"
+  }
+]
