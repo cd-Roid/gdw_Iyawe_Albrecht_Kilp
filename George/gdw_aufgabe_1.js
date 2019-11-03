@@ -1,9 +1,11 @@
 
 console.log("George");
 
+const hello = "hello";
 const maxRating = 100;
 var anzBewertungen = 0;
 var bewertung = 0;
+
 
 console.log(bewertung,anzBewertungen,maxRating);
 
@@ -34,17 +36,44 @@ function newBewertung(){
 }
 
 //gdw_aufagabe 2 
+<<<<<<< HEAD
+function bewertungArray(){
+    let newArray = ['Bewertung 1',anzBewertungen , bewertung];
+            console.log(newArray.length);
+=======
 let newArray = [name = `Bewertung ${anzBewertungen}`,anzBewertungen , bewertung];
 
  function bewertungArray(){
      newArray;
         console.log(newArray.length); 
         console.log(newArray[0]);
+>>>>>>> 61329cc442096705ff4a16e9ac5dbfb9bc4a85c5
 }
-
+                
+                
 function ratingObject(){
     let rating = new Object(); 
         rating.name = `Bewertung ${anzBewertungen}`;
+<<<<<<< HEAD
+            rating.rating = rating; 
+                rating.number = anzBewertungen; 
+                    rating.average = this.average();
+           
+                }
+
+ const concat = () =>{
+    const world = "World";
+         var turn = hello + world;
+            return turn; 
+
+ }
+
+
+
+
+//newBewertung();
+  
+=======
         rating.rating = rating; 
         rating.number = anzBewertungen; 
 }
@@ -54,3 +83,4 @@ function ratingObject(){
 
     newBewertung();
     console.log(ratingObject.name);
+>>>>>>> 61329cc442096705ff4a16e9ac5dbfb9bc4a85c5
