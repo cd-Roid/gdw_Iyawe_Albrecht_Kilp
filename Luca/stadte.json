@@ -1,0 +1,54 @@
+
+[
+   {  
+        "name" : "Berlin",
+        "state" : "Berlin",
+        "pop" : 3748148
+    },
+    {
+        "name" : "Hamburg",
+        "state" : "Hamburg",
+        "pop" : 1891810
+    },
+    {
+        "name" : "Muenchen",
+        "state" : "Bayern",
+        "pop" : 1471501
+    },
+    {
+        "name" : "Koeln",
+        "state" : "NRW",
+        "pop" : 1085664
+    },
+    {
+        "name" : "Frankfurt",
+        "state" : "Hessen",
+        "pop" : 753056
+    },
+    { 
+        "name" : "Stuttgart",
+        "state" : "Rheinland-Pfalz",
+        "pop" : 634830   
+    },
+    { 
+        "name" : "Duesseldorf",
+        "state" : "NRW",
+        "pop" : 619294
+    },
+    {   
+        "name" : "Leipzig",
+        "state" : "Sachsen",
+        "pop" : 587852
+    },
+    {
+        "name" : "Dortmund",
+        "state" : "NRW",
+        "pop" : 587010
+    },
+    { 
+        "name" : "Essen",
+        "state" : "NRW",
+        "pop" : 583109
+    }
+   
+ ]
