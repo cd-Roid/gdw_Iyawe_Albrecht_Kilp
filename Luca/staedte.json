@@ -1,0 +1,52 @@
+[
+	{
+		"city": "Berlin",
+		"population": 3520031,
+		"state": "Berlin"
+	},
+	{
+		"city": "Hamburg",
+		"population": 1787408,
+		"state": "Hamburg"
+	},
+	{
+		"city": "München",
+		"population": 1450381,
+		"state": "Bayern"
+	},
+	{
+		"city": "Köln",
+		"population": 1060582,
+		"state": "Nordrhein-Westfalen"
+	},
+	{
+		"city": "Frankfurt a.M.",
+		"population": 732688,
+		"state": "Hessen"
+	},
+	{
+		"city": "Stuttgart",
+		"population": 623738,
+		"state": "Baden-Württemberg"
+	},
+	{
+		"city": "Düsseldorf",
+		"population": 612178,
+		"state": "Nordrhein-Westfalen"
+	},
+	{
+		"city": "Dortmund",
+		"population": 586181,
+		"state": "Nordrhein-Westfalen"
+	},
+	{
+		"city": "Essen",
+		"population": 582624,
+		"state": "Nordrhein-Westfalen"
+	},
+	{
+		"city": "Leipzig",
+		"population": 560472,
+		"state": "Sachsen"
+	}
+]

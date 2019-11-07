@@ -1,52 +1,52 @@
 
 [
    {  
-        "name" : "Berlin",
+        "stadt" : "Berlin",
         "state" : "Berlin",
         "pop" : 3748148
     },
     {
-        "name" : "Hamburg",
+        "stadt" : "Hamburg",
         "state" : "Hamburg",
         "pop" : 1891810
     },
     {
-        "name" : "Muenchen",
+        "stadt" : "Muenchen",
         "state" : "Bayern",
         "pop" : 1471501
     },
     {
-        "name" : "Koeln",
+        "stadt" : "Koeln",
         "state" : "NRW",
         "pop" : 1085664
     },
     {
-        "name" : "Frankfurt",
+        "stadt" : "Frankfurt",
         "state" : "Hessen",
         "pop" : 753056
     },
     { 
-        "name" : "Stuttgart",
+        "stadt" : "Stuttgart",
         "state" : "Rheinland-Pfalz",
         "pop" : 634830   
     },
     { 
-        "name" : "Duesseldorf",
+        "stadt" : "Duesseldorf",
         "state" : "NRW",
         "pop" : 619294
     },
     {   
-        "name" : "Leipzig",
+        "stadt" : "Leipzig",
         "state" : "Sachsen",
         "pop" : 587852
     },
     {
-        "name" : "Dortmund",
+        "stadt" : "Dortmund",
         "state" : "NRW",
         "pop" : 587010
     },
     { 
-        "name" : "Essen",
+        "stadt" : "Essen",
         "state" : "NRW",
         "pop" : 583109
     }
