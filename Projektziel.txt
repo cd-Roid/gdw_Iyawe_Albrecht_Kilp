@@ -1,0 +1,13 @@
+
+In dem von uns ausgesuchten Projekt geht es um die korrekte Versorgung einer oder mehrerer Pflanzen. 
+Durch die Standortangabe sowie Auswahl der eigenen Pflanzen in der Applikation erhält der User Tipps zu Pflazenstandorten, zum gießen und viele weitere nützliche Informationen zur Pflege.
+
+Die für uns wichtigen Probleme:
+- Reduzierung der Informationen der APIs
+- Logische Verbindung zwischen Wetter- & Pflanzendaten
+- Evtl. möglich auch Indoor Pflanzen einzubeziehen? (Informationsmangel?)
+
+Auf Grund einer riesigen Menge an Informationen zu jeglichen Pflanzen muss in der späteren Programmierung auf wichtige, für die Funktionalität wichtigen Elemente runtergebrochen werden.
+Es wird wichtig, welche Daten sind nur für Berechnungen, welche auch für den Nutzer brauchbar sind. Durch die Nutzung der von uns gewählten Wetter-API wird es wohl nicht möglich sein, 
+diese Anwendung auch bei Zimmerpflanzen zu benutzen, da die Verknüpfung mit privaten Messgeräten im Haushalt aktuell nicht geplant ist.
+
