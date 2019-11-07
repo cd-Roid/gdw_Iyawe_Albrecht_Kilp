@@ -1,5 +1,3 @@
-
-
 //Einbinden von readline Module
 const readline = require("readline");
 const rl = readline.createInterface({
@@ -31,7 +29,7 @@ rl.question("Wie oft soll die Funktion ausgefuehrt werden? ", function(answer) {
 //Funktion n mal ausführen
 const add_rating_n = function(n) {
 	for (i = 0; i < n; i++) {
-		let random = Math.floor(Math.random() * 6);
+		let random = Math.floor(Math.random() * 6 + 1);
 		add_rating(random);
 		console.log("Current Rating: " + random);
 		current_rating();

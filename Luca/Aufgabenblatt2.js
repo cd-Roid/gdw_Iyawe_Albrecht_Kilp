@@ -1,5 +1,5 @@
 //Aufgabe 5
-const hello = "hello";
+let hello = "hello";
 
 function First() {
 	let world = " World";
@@ -34,7 +34,7 @@ function rating(name, max_rating, ratings) {
 	this.rating_count = () => this.ratings.length;
 }
 
-var ratings = new rating("Bewertung für App XY", 5, [3, 5, 3, 2]);
+var ratings = new rating("Bewertung für 'Artemis Fowl'", 5, [3, 5, 3, 2]);
 
 //Funktion zur Ausgabe der Bewertung
 const current_rating = function() {
@@ -43,7 +43,7 @@ const current_rating = function() {
 			ratings.average().toFixed(2) +
 			" bei " +
 			ratings.rating_count() +
-			" Bewertungen. \nName der Bewertung: " +
+			" Bewertungen. \n" +
 			ratings.name +
 			" Letzte Bewertung: " +
 			ratings.ratings[ratings.rating_count() - 1]
