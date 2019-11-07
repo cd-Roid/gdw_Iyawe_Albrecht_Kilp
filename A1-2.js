@@ -1,5 +1,4 @@
-//Aufgabenblatt 2
-
+// Aufgabe 1/2
 const maxBew = 5;
 var anzahlBewert=0;
 var summBew=0;
@@ -60,8 +59,6 @@ let bewertungInfo = ["Bewertung 1", anzahlBewert, lastBewert];
 
 console.log(bewertungInfo.length, bewertungInfo[bewertungInfo.length-1]);
 
-
-//Aufgabe 2, 3, 4
 
 function Ratings (name, anzahlBew, bew){
 	this.name = name;
