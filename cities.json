@@ -1,67 +1,62 @@
-[
-  {
-    "stadt": "Schafflund",
-    "einwohnerzahl": 10,
-    "bundesland": "sh"
-  },
 
   {
-    "stadt": "Flensburg",
-    "einwohnerzahl": 9,
-    "bundesland": "sh"
+    "name": "Schafflund",
+    "rank": 1,
+    "einwohner": 10,
+    "bundesland": "SH"
   },
-
   {
-    "stadt": "Kiel",
-    "einwohnerzahl": 8,
-    "bundesland": "sh"
+    "name": "Hamburg",
+    "rank": 2,
+    "einwohner": 9,
+    "bundesland": "Hamburg"
   },
-
   {
-    "stadt": "Hamburg",
-    "einwohnerzahl": 7,
-    "bundesland": "hamburg"
+    "name": "Kiel",
+    "rank": 3,
+    "einwohner": 8,
+    "bundesland": "SH"
   },
-
   {
-    "stadt": "Köln",
-    "einwohnerzahl": 6,
-    "bundesland": "nrw"
+    "name": "Köln",
+    "rank": 4,
+    "einwohner": 7,
+    "bundesland": "NRW"
   },
-
   {
-    "stadt": "Frankfurt",
-    "einwohnerzahl": 5,
-    "bundesland": "hessen"
+    "name": "Frankfurt",
+    "rank": 5,
+    "einwohner": 6,
+    "bundesland": "Hessen"
   },
-
   {
-    "stadt": "Dortmund",
-    "einwohnerzahl": 4,
-    "bundesland": "nrw"
+    "name": "Stuttgart",
+    "rank": 6,
+    "einwohner": 5,
+    "bundesland": "Baden-Württemberg"
   },
-
   {
-    "stadt": "Regensburg",
-    "einwohnerzahl": 3,
-    "bundesland": "bayern"
+    "name": "Düsseldorf",
+    "rank": 7,
+    "einwohner": 4,
+    "bundesland": "NRW"
   },
-
   {
-    "stadt": "Meyn",
-    "einwohnerzahl": 2,
-    "bundesland": "sh"
+    "name": "Leipzig",
+    "rank": 8,
+    "einwohner": 3,
+    "bundesland": "Sachsen"
   },
-
   {
-    "stadt": "Lübeck",
-    "einwohnerzahl": 1,
-    "bundesland": "sh"
+    "name": "Dortmund",
+    "rank": 9,
+    "einwohner": 2,
+    "bundesland": "NRW"
   },
-
   {
-    "stadt": "Neumünster",
-    "einwohnerzahl": 0,
-    "bundesland": "sh"
-  }
-]
+    "name": "Lübeck",
+    "rank": 10,
+    "einwohner": 1,
+    "bundesland": "SH"
+  },
+ 
