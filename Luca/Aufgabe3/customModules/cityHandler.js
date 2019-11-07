@@ -10,33 +10,33 @@ const readJSON = function(fileName) {
 
 const search = function(string, array) {
 	array.forEach(element => {
-		if (element.stadt == string) {
+		if (element.city == string) {
 			console.log(element);
 		}
 	});
 };
 
-const deleteStadt = function(string, array) {
+const deleteCity = function(string, array) {
 	array.forEach(function(element, index, array) {
-		if (element.stadt == string) {
+		if (element.city == string) {
 			array.splice(index, 1);
 		}
 	});
 	return array;
 };
 
-const addStadt = function(stadt, state, pop, array) {
-	let newStadt = { stadt: stadt, state: state, pop: pop };
-	array.push(newStadt);
+const addCity = function(city, population, state, array) {
+	let newCity = { city: city, population: population, state: state };
+	array.push(newCity);
 	return array;
 };
 
-const mergeBenutzerStadt = function(benutzer, stadt) {
+const mergeUserCity = function(users, cities) {
 	var ausgabe = [];
-	benutzer.forEach(element => {
+	users.forEach(element => {
 		var ort = 0;
-		for (i = 0; i < staedte.length; i++) {
-			if (element.adresse == stadte[i].stadt) {
+		for (i = 0; i < cities.length; i++) {
+			if (element.wohnort == cities[i].city) {
 				ort = i;
 				break;
 			}
@@ -45,9 +45,9 @@ const mergeBenutzerStadt = function(benutzer, stadt) {
 			vorname: element.vorname,
 			name: element.name,
 			email: element.email,
-			adresse: element.adresse,
-			pop: staedte[ort].pop,
-			state: staedte[ort].state
+			wohnort: element.wohnort,
+			population: cities[ort].population,
+			state: cities[ort].state
 		};
 		ausgabe.push(newElem);
 	});
@@ -57,7 +57,7 @@ const mergeBenutzerStadt = function(benutzer, stadt) {
 const outputMergedList = function(list) {
 	list.forEach(element => {
 		console.log(
-			`Vorname: ${element.vorname}\nNachname: ${element.name}\nE-Mail: ${element.email}\nAdresse: ${element.adresse}\nEinwohner: ${element.pop}\nBundesland: ${element.state}\n`
+			`Vorname: ${element.vorname}\nNachname: ${element.name}\nE-Mail: ${element.email}\nWohnort: ${element.wohnort}\nEinwohner: ${element.population}\nBundesland: ${element.state}\n`
 		);
 	});
 };
@@ -65,8 +65,8 @@ const outputMergedList = function(list) {
 module.exports = {
 	readJSON,
 	search,
-	deleteStadt,
-	addStadt,
-	mergeBenutzerStadt,
+	deleteCity,
+	addCity,
+	mergeUserCity,
 	outputMergedList
 };
