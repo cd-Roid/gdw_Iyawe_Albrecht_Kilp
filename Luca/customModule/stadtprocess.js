@@ -25,8 +25,8 @@ const deleteStadt = function(string, array) {
 	return array;
 };
 
-const addStadt = function(stadt, pop, state, array) {
-	let newStadt = { stadt: stadt, pop: pop, state: state };
+const addStadt = function(stadt, state, pop, array) {
+	let newStadt = { stadt: stadt, state: state, pop: pop };
 	array.push(newStadt);
 	return array;
 };
@@ -35,7 +35,7 @@ const mergeBenutzerStadt = function(benutzer, stadt) {
 	var ausgabe = [];
 	benutzer.forEach(element => {
 		var ort = 0;
-		for (i = 0; i < cities.length; i++) {
+		for (i = 0; i < staedte.length; i++) {
 			if (element.adresse == stadte[i].stadt) {
 				ort = i;
 				break;
@@ -57,7 +57,7 @@ const mergeBenutzerStadt = function(benutzer, stadt) {
 const outputMergedList = function(list) {
 	list.forEach(element => {
 		console.log(
-			`Vorname: ${element.vorname}\nNachname: ${element.name}\nE-Mail: ${element.email}\nAdresse: ${element.wohnort}\nEinwohner: ${element.population}\nBundesland: ${element.state}\n`
+			`Vorname: ${element.vorname}\nNachname: ${element.name}\nE-Mail: ${element.email}\nAdresse: ${element.adresse}\nEinwohner: ${element.pop}\nBundesland: ${element.state}\n`
 		);
 	});
 };
