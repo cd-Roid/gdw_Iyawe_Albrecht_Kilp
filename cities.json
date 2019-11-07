@@ -1,0 +1,67 @@
+[
+  {
+    "stadt": "Schafflund",
+    "einwohnerzahl": 10,
+    "bundesland": "sh"
+  },
+
+  {
+    "stadt": "Flensburg",
+    "einwohnerzahl": 9,
+    "bundesland": "sh"
+  },
+
+  {
+    "stadt": "Kiel",
+    "einwohnerzahl": 8,
+    "bundesland": "sh"
+  },
+
+  {
+    "stadt": "Hamburg",
+    "einwohnerzahl": 7,
+    "bundesland": "hamburg"
+  },
+
+  {
+    "stadt": "Köln",
+    "einwohnerzahl": 6,
+    "bundesland": "nrw"
+  },
+
+  {
+    "stadt": "Frankfurt",
+    "einwohnerzahl": 5,
+    "bundesland": "hessen"
+  },
+
+  {
+    "stadt": "Dortmund",
+    "einwohnerzahl": 4,
+    "bundesland": "nrw"
+  },
+
+  {
+    "stadt": "Regensburg",
+    "einwohnerzahl": 3,
+    "bundesland": "bayern"
+  },
+
+  {
+    "stadt": "Meyn",
+    "einwohnerzahl": 2,
+    "bundesland": "sh"
+  },
+
+  {
+    "stadt": "Lübeck",
+    "einwohnerzahl": 1,
+    "bundesland": "sh"
+  },
+
+  {
+    "stadt": "Neumünster",
+    "einwohnerzahl": 0,
+    "bundesland": "sh"
+  }
+]
