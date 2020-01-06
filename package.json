@@ -1,0 +1,27 @@
+{
+  "name": "flopo_api",
+  "version": "1.0.0",
+  "description": "Grundlagen des Webs Projekt FloPo",
+  "main": "server.js",
+  "scripts": {
+   "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cd-Roid/gdw_Iyawe_Albrecht_Kilp.git"
+  },
+  "author": "George Iyawe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cd-Roid/gdw_Iyawe_Albrecht_Kilp/issues"
+  },
+  "homepage": "https://github.com/cd-Roid/gdw_Iyawe_Albrecht_Kilp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.4"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  }
+}
