@@ -1,1 +1,19 @@
-GET http://localhost:3000/User
+GET http://localhost:3000/User/all
+
+###
+
+POST http://localhost:3000/User/newUser
+Content-Type: application/json
+
+{
+    "name": "Jeff Goldblum",
+    "plants": "Indica-Sativa",
+    "zipcode": 8999999
+}
+####
+GET http://localhost:3000/User/getUser/5e1b6ecf3b823b147bbe242b
+
+
+###
+
+DELETE http://localhost:3000/User/5e1b6ecf3b823b147bbe242b

@@ -7,14 +7,13 @@ const Usermodel = new mongoose.Schema({
         required: true
     },
     plants:{
-        type:JSON,
+        type:String,
         required:true
     },
-    address:{
-        type:JSON,
+    zipcode:{
+        type: Number,
         required:true
     }
-
 })
 
 
