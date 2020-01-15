@@ -10,9 +10,9 @@ const Usermodel = new mongoose.Schema({
         type:String,
         required:true
     },
-    zipcode:{
+    adress:{
         type: Number,
-        required:true
+        required: true
     }
 })
 
