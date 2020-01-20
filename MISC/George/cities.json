@@ -1,0 +1,62 @@
+
+  {
+    "name": "Schafflund",
+    "rank": 1,
+    "einwohner": 10,
+    "bundesland": "SH"
+  },
+  {
+    "name": "Hamburg",
+    "rank": 2,
+    "einwohner": 9,
+    "bundesland": "Hamburg"
+  },
+  {
+    "name": "Kiel",
+    "rank": 3,
+    "einwohner": 8,
+    "bundesland": "SH"
+  },
+  {
+    "name": "Köln",
+    "rank": 4,
+    "einwohner": 7,
+    "bundesland": "NRW"
+  },
+  {
+    "name": "Frankfurt",
+    "rank": 5,
+    "einwohner": 6,
+    "bundesland": "Hessen"
+  },
+  {
+    "name": "Stuttgart",
+    "rank": 6,
+    "einwohner": 5,
+    "bundesland": "Baden-Württemberg"
+  },
+  {
+    "name": "Düsseldorf",
+    "rank": 7,
+    "einwohner": 4,
+    "bundesland": "NRW"
+  },
+  {
+    "name": "Leipzig",
+    "rank": 8,
+    "einwohner": 3,
+    "bundesland": "Sachsen"
+  },
+  {
+    "name": "Dortmund",
+    "rank": 9,
+    "einwohner": 2,
+    "bundesland": "NRW"
+  },
+  {
+    "name": "Lübeck",
+    "rank": 10,
+    "einwohner": 1,
+    "bundesland": "SH"
+  },
+ 
