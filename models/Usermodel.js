@@ -11,9 +11,11 @@ const Usermodel = new mongoose.Schema({
         required:true
     },
 
+
     adress:{
         type: Number,
         required: true
+    }
 
     })
 

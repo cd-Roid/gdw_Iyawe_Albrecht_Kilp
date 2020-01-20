@@ -11,8 +11,8 @@ const mongoose = require('mongoose')
 const User = require('../gdw_Iyawe_Albrecht_Kilp/models/Usermodel')
 
 //app wird mit mongoose verbunden
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true ,useUnifiedTopology: true })
-const db = mongoose.connection()
+mongoose.connect(process.env.DATABASE_URL  , { useNewUrlParser: true ,useUnifiedTopology: true })
+const db = mongoose.connect()
 
 //database test
 db.on('err', (err)=>console.error(err))
@@ -34,7 +34,7 @@ app.get('/:id',  async function get_User_by_Id(req,res,next){
       })
       .catch(err => next(err))
     res.user = toGet;
-    res.send(user.body)
+    res.send(User.body)
     next();
 })
 
@@ -42,7 +42,6 @@ app.get('/:id',  async function get_User_by_Id(req,res,next){
 
 
 app.use('/User',UserRouten);
-
 
 
 
