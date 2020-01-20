@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## GET ALL
 GET http://localhost:3000/User/all
 
@@ -19,3 +20,6 @@ Content-Type: application/json
 ### DELETE USER
 
 DELETE http://localhost:3000/User/5e1df9022aa17d4378e0e5da
+=======
+GET http://localhost:3000/User
+>>>>>>> parent of fa0871e... get, post, patch und delete routes implimentiert

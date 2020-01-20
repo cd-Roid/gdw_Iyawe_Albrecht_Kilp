@@ -13,6 +13,7 @@ router.get("/all", async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
 //ein Nutzer wird angezeigt
 router.get("/getUser/:id" ,get_User_by_Id ,async (req, res) => {     
   res.json(res.get_User_by_Id)
@@ -32,8 +33,30 @@ router.post("/newUser", async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 });
+=======
 
+// alle Nutzer werden angezeigt 
+router.get('/', async(req, res)=> {
+    try {
+            const Users = await User.find()
+            res.send
+    } catch (error) {
+        res.status(500).json({message:error.message})
+    }
+})
+
+//ein Nutzer wird angezeigt 
+router.get('/:id', (req, res)=> {
+
+})
+
+//neuer Nutzer wird hinzugefügt
+router.post('/', (req, res)=> {
+>>>>>>> parent of fa0871e... get, post, patch und delete routes implimentiert
+
+})
 //neue Pflanze wird dem Nutzer zugewiesen
+<<<<<<< HEAD
 router.put("/:id", get_User_by_Id,async(req, res) => {
     if(req.body.name != null || req.body.plants !=null || req.body.adress != null ){
       res.get_User_by_Id.name = req.body.name
@@ -76,3 +99,18 @@ async function get_User_by_Id(req,res,next){
 
 
 module.exports = router;
+=======
+router.patch('/:id', (req, res)=> {
+
+})
+//nutzer wird aktualisiert 
+router.patch('/:id', (req, res)=> {
+
+})
+
+//Nutzer wird gelöscht
+router.delete('/:id', (req, res)=> {
+
+})
+module.exports = router
+>>>>>>> parent of fa0871e... get, post, patch und delete routes implimentiert

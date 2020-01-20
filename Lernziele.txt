@@ -1,0 +1,8 @@
+- Erstellen des Konzeptes einer Projektidee
+
+- Erstellen eines vorläufigen Domänenmodels
+
+- Verständnis von GitHub
+
+- Einarbeitung in NodeJS/JS
+
