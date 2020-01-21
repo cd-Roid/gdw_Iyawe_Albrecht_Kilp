@@ -14,69 +14,81 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Creating one User
+router.post('/newUser', async (req, res) => {
 
-//neuer Nutzer wird hinzugefügt
-router.post("/newUser", async (req, res) => {
-  const newUser = new User({
+  const postUser = new User({
     name: req.body.name,
     plants: req.body.plants,
     adress: req.body.adress
-  });
+  })
+
   try {
-    const newUSer = await newUser.save();
-    res.status(201).json(newUSer);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
+       await postUser.save()
+    res.status(201).json(newUser)
+  } catch (err) {
+    res.status(500).json({ message: err.message })
   }
-});
+})
 
-router.get('/:id',async(req,res,next)=>{
+// Getting one User
+router.get('/:id', getUser, (req, res) => {
+  res.json(res.User)
+})
 
-  let toGet = await User.findById(req.params.id)
-  .then( Userfound => {
-        if(!Userfound){ return res.status(404).end()}
-       return  res.status(200).json(Userfound)
-    })
-    .catch(err => (err))
-    res.user = toGet;
-    res.send(User.body)
- 
+// Updating one User
+router.put('/:id', getUser, async (req, res) => {
+  if (req.body.name != null) {
+    res.User.name = req.body.name
+  }
+
+  if (req.body.plants != null) {
+    res.User.plants = req.body.plants
+  }
+  if (req.body.adress != null) {
+    res.User.adress = req.body.adress
+  }
+  try {
+    const updatedUser = await res.User.save()
+    res.json(updatedUser)
+  } catch {
+    res.status(400).json({ message: err.message })
+  }
+
+})
+// Deleting one User
+router.delete('/:id', getUser, async (req, res) => {
+  try {
+    await res.User.remove()
+    res.json({ message: 'Deleted This User' })
+  } catch(err) {
+    res.status(500).json({ message: err.message })
+  }
+})
+
+router.delete('/',async(req,res)=>{
+try {
+  User.deleteMany({},(err)=>res.send(err))
+} catch (error) {
+  res.status(500).json({message:error.message})
+}
 })
 
 
-
-//neue Pflanze wird dem Nutzer zugewiesen
-router.put('/:id',async(req, res) => {
-    let toGet = await User.findById(req.params.id)
-    .then( Userfound => {
-          if(!Userfound){ return res.status(404).end()}
-         return  res.status(200).json(Userfound)
-      })
-      .catch(err => (err))
-   
-   
-  .then
+// Middleware function for gettig User object by ID
+async function getUser(req, res, next) {
+ let userToFind
   try {
-    if(req.body.name != null || req.body.plants !=null || req.body.adress != null ){
-      const newUser = new User({
-        name: res.body.name,
-        plants: res.body.plants,
-        adress: res.body.adress
-      })
-       replaced = newUser
+    userToFind = await User.findById(req.params.id)
+    if (userToFind == null) {
+      return res.status(404).json({ message: 'Cant find User'})
     }
-      replaced = await toGet.save()
-    } catch (error) {
-    res.status(500).json({error:error.message})
+  } catch(err){
+    return res.status(500).json({ message: err.message })
   }
-  })
+  
+  res.User = userToFind
+  next()
+}
 
-
-
-
-
-
-
-
-
-module.exports = router;
+module.exports = router 
