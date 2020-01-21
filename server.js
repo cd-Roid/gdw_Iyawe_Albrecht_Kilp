@@ -14,6 +14,15 @@ app.use(express.json())
 const UserRouter = require('./routes/User')
 app.use('/User', UserRouter)
 
+
+//Endpoint um aus der Weatherstack API die wetterdaten zu holen
+//https://weatherstack.com/documentation durchgucken. route-handler funktioniert noch nicht wie gewollt.
+
+const params = {
+  access_key: process.env.WEATHER_STACK_API_KEY,
+  query: 'Gummersbach'
+}
+app.get()
 app.listen(3000, () => console.log('server started'))
 
 

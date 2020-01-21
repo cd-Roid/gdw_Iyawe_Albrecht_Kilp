@@ -74,8 +74,13 @@ try {
 }
 })
 
+//Middleware um aus trefle.io die nötigen Pflanzendaten zu holen.
+async function getPlantDate(req,res,next){
+const trefle_query_link = 'https://trefle.io/api/plants?q={User.plant}&id={plant_id}&token=PROCESS.env.API_KEY_TREFLE'
+console.log(trefle_query_link)
+}
 
-// Middleware function for gettig User object by ID
+// Middleware um die User id zu holen. Wird bei jedem request weitergegeben der ne :id enthält.
 async function getUser(req, res, next) {
  let userToFind
   try {

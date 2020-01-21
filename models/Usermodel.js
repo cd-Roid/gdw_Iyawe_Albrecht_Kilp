@@ -15,8 +15,15 @@ const Usermodel = new mongoose.Schema({
     adress:{
         type: Number,
         required: true
+    },
+    plant_data:{
+        type:JSON,
+        required: false
+    },
+    weather_data:{
+        type:JSON,
+        required:false
     }
-
     })
 
 module.exports = mongoose.model('User',Usermodel)
