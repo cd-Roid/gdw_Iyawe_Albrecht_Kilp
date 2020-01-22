@@ -120,6 +120,26 @@ router.get('/plant_Precipitation/:id', getUser, async (req, res) => {
     return res.status(500).json({ error: error.message })
   }
 })
+//berechnet den täglichen wasser verbrauch der Pflanze und gibt diese aus.
+router.get('/get_daily_water_need/:id',getUser,async(req,res)=>{
+  const weather_precip = res.User.weather_precipitation
+  const plant_precip = res.User.plant_percipitation_maximum
+
+  const daily_need = plant_precip/7
+  try{
+    if(weather_precip <=1){
+    res.User.plant_daily_water_need = daily_need
+    res.json(res.User)
+    
+  }else{
+    const need = daily_need - weather_precip
+    res.User.plant_daily_water_need = need
+    res.json(res.User)
+  }}
+  catch(err){
+      res.status(500),json({err:err.message})
+  }
+})
 
 
 // Middleware um die User id zu holen. Wird bei jedem request weitergegeben der ne :id enthält.
@@ -137,5 +157,6 @@ async function getUser(req, res, next) {
   res.User = userToFind
   next()
 }
+
 
 module.exports = router 

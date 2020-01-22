@@ -27,6 +27,11 @@ const Usermodel = new mongoose.Schema({
         type: Number,
         required: false,
         default: 0
+    },
+    plant_daily_water_need:{
+        type: Number,
+        required: false,
+        default: 0
     }
 
 })
