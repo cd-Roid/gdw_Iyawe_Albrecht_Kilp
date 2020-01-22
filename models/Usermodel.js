@@ -2,43 +2,33 @@ const mongoose = require('mongoose')
 
 
 const Usermodel = new mongoose.Schema({
-    name:{
+    name: {
         type: String,
         required: true
     },
-    plants:{
-        type:JSON,
-        required:true
+    plants: {
+        type: JSON,
+        required: true
     },
-
-
-    adress:{
+    adress: {
         type: String,
         required: true
     },
-    plant_data:{
-        type:JSON,
+    plant_data: {
+        type: JSON,
         required: false
     },
-    weather_data:{
-        type:JSON,
-        required:false
-    },
-    Query_for_plant_precip:{
-        type:JSON,
-        required:false
-    },
-    plant_percipitation_maximum:{
+    plant_percipitation_maximum: {
         type: Number,
-        required:false,
+        required: false,
         default: 0
     },
-    weather_precipitation:{
+    weather_precipitation: {
         type: Number,
-        required:false,
+        required: false,
         default: 0
     }
 
-    })
+})
 
-module.exports = mongoose.model('User',Usermodel)
+module.exports = mongoose.model('User', Usermodel)
