@@ -13,7 +13,7 @@ const Usermodel = new mongoose.Schema({
 
 
     adress:{
-        type: Number,
+        type: String,
         required: true
     },
     plant_data:{
@@ -23,7 +23,22 @@ const Usermodel = new mongoose.Schema({
     weather_data:{
         type:JSON,
         required:false
+    },
+    Query_for_plant_precip:{
+        type:JSON,
+        required:false
+    },
+    plant_percipitation_maximum:{
+        type: Number,
+        required:false,
+        default: 0
+    },
+    weather_precipitation:{
+        type: Number,
+        required:false,
+        default: 0
     }
+
     })
 
 module.exports = mongoose.model('User',Usermodel)
