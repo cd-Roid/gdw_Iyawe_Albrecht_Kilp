@@ -130,11 +130,13 @@ router.get('/get_daily_water_need/:id',getUser,async(req,res)=>{
     if(weather_precip <=1){
     res.User.plant_daily_water_need = daily_need
     res.json(res.User)
+    res.User.save()
     
   }else{
     const need = daily_need - weather_precip
     res.User.plant_daily_water_need = need
     res.json(res.User)
+    res.User.save()
   }}
   catch(err){
       res.status(500),json({err:err.message})
