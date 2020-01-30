@@ -50,13 +50,14 @@ Thumbs.db
 *.der
 *.key
 *.pem
+*.env
 
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
 
 # track these files, if they exist
-!.env
+
 !.gitignore
 !.editorconfig
 !.phpcs.xml.dist
