@@ -6,3 +6,7 @@ Für Dev testing.
 - git repo runterladen.
 - App dependencies runterladen. (rechts-klick auf package.json)
 - "npm run dev" in der bash console ausführen. 
+
+
+Das Projekt wurde erfolgreich auf Heroku freigegeben.
+Link : https://flo-po.herokuapp.com/User
